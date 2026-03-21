@@ -1,0 +1,162 @@
+* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #eef2ff, #f8f9ff);
+  color: #222;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #b4106a, #ee0979);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 15px;
+}
+
+/* Section Colors */
+#about {
+  background: #ffffff;
+}
+
+#skills {
+  background: #e0f7fa;
+}
+
+#projects {
+  background: #fff3e0;
+}
+
+#education {
+  background: #e8f5e9;
+}
+
+#achievements {
+  background: #f3e5f5;
+}
+
+#contact {
+  background: #e3f2fd;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Skills */
+#skills ul {
+  text-align: center;
+}
+
+#skills li {
+  display: inline-block;
+  background: #0077b6;
+  color: white;
+  margin: 8px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#skills li:hover {
+  background: #023e8a;
+}
+
+/* Projects */
+.project {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 6px solid #ff6a00;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background: #ee0979;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background: #c4005c;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}

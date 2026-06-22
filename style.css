@@ -1,23 +1,31 @@
-
+```css
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
+/* Body */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #eef2ff, #f8f9ff);
   color: #222;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
   background: linear-gradient(135deg, #b4106a, #ee0979);
   color: white;
   text-align: center;
   padding: 50px 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -29,7 +37,7 @@ header p {
   margin-top: 10px;
 }
 
-
+/* Navigation */
 nav {
   margin-top: 20px;
 }
@@ -46,15 +54,20 @@ nav a:hover {
   color: yellow;
 }
 
-
+/* Sections */
 section {
   padding: 60px 20px;
   margin: 20px auto;
   max-width: 900px;
   border-radius: 15px;
+  transition: 0.3s ease;
 }
 
+section:hover {
+  transform: translateY(-3px);
+}
 
+/* Section Backgrounds */
 #about {
   background: #ffffff;
 }
@@ -65,6 +78,10 @@ section {
 
 #projects {
   background: #fff3e0;
+}
+
+#internships {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
 }
 
 #education {
@@ -82,12 +99,27 @@ section {
 /* Headings */
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #333;
+  position: relative;
+  padding-bottom: 10px;
 }
 
+h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ee0979;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Skills */
 #skills ul {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #skills li {
@@ -97,68 +129,101 @@ h2 {
   margin: 8px;
   padding: 10px 15px;
   border-radius: 20px;
+  list-style: none;
   transition: 0.3s;
 }
 
 #skills li:hover {
   background: #023e8a;
+  transform: translateY(-2px);
 }
 
-#internships {
-  background: #fff8e1;
-}
-
-.internship {
-  background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-left: 6px solid #ff9800;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.internship:hover {
-  
+/* Projects */
 .project {
   background: white;
   padding: 20px;
   margin: 15px 0;
   border-left: 6px solid #ff6a00;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 .project:hover {
   transform: scale(1.03);
 }
 
+.project h3 {
+  color: #ff6a00;
+  margin-bottom: 10px;
+}
 
+/* Internships */
+.internship {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 6px solid #ff9800;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.internship:hover {
+  transform: scale(1.03);
+}
+
+.internship h3 {
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+.internship p {
+  margin: 8px 0;
+}
+
+/* Education */
+#education p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Achievements */
+#achievements ul {
+  padding-left: 25px;
+}
+
+#achievements li {
+  margin-bottom: 15px;
+}
+
+/* Contact */
 #contact p {
   text-align: center;
   margin: 10px 0;
 }
 
-
+/* Resume Button */
 .resume-btn {
   display: block;
   width: fit-content;
-  margin: 20px auto;
+  margin: 25px auto;
   padding: 12px 25px;
   background: #ee0979;
   color: white;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .resume-btn:hover {
   background: #c4005c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Footer */
 footer {
   background: #222;
   color: white;
@@ -166,10 +231,21 @@ footer {
   padding: 15px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
 
-@media (max-width: 600px) {
   nav a {
     display: block;
     margin: 10px 0;
   }
+
+  section {
+    margin: 15px;
+    padding: 40px 15px;
+  }
 }
+```
+

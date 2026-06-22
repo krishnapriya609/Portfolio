@@ -1,18 +1,17 @@
-* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #eef2ff, #f8f9ff);
   color: #222;
 }
 
-/* Header */
 header {
   background: linear-gradient(135deg, #b4106a, #ee0979);
   color: white;
@@ -30,7 +29,7 @@ header p {
   margin-top: 10px;
 }
 
-/* Navigation */
+
 nav {
   margin-top: 20px;
 }
@@ -47,7 +46,7 @@ nav a:hover {
   color: yellow;
 }
 
-/* Sections */
+
 section {
   padding: 60px 20px;
   margin: 20px auto;
@@ -55,7 +54,7 @@ section {
   border-radius: 15px;
 }
 
-/* Section Colors */
+
 #about {
   background: #ffffff;
 }
@@ -87,7 +86,6 @@ h2 {
   color: #333;
 }
 
-/* Skills */
 #skills ul {
   text-align: center;
 }
@@ -106,7 +104,22 @@ h2 {
   background: #023e8a;
 }
 
-/* Projects */
+#internships {
+  background: #fff8e1;
+}
+
+.internship {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 6px solid #ff9800;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.internship:hover {
+  
 .project {
   background: white;
   padding: 20px;
@@ -121,13 +134,13 @@ h2 {
   transform: scale(1.03);
 }
 
-/* Contact */
+
 #contact p {
   text-align: center;
   margin: 10px 0;
 }
 
-/* Resume Button */
+
 .resume-btn {
   display: block;
   width: fit-content;
@@ -145,7 +158,7 @@ h2 {
   background: #c4005c;
 }
 
-/* Footer */
+
 footer {
   background: #222;
   color: white;
@@ -153,7 +166,7 @@ footer {
   padding: 15px;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   nav a {
     display: block;
